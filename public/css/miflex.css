@@ -10,18 +10,24 @@
         background-color:black
     }
         .menu{
-            background-color:aquamarine;  
+            background-color:aquamarine;
+            display: flex; 
+            flex-flow:row; 
+            justify-content:space-between;
            
         }
             .logo{
                 background-color:darkgreen;
+                flex: 1 1 auto;
              
             }
             .nav{
                 background-color:darkgreen;
+                flex: 5 1 auto;
             }
             .social{
                 background-color:darkgreen;
+                flex: 1 1 auto;
             }
         .texto-principal{
             background-color: coral;
@@ -32,27 +38,40 @@
 
     .section{
         background-color: black;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
     }
 
         .articulos{
             background-color: blueviolet;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
         }
             article{
                 background-color: blanchedalmond;
+                flex: 1 1 40%;
             }
-        .navegacion{
-            background-color: deeppink;
+            .navegacion{
+                background-color: deeppink;
+                flex: 1 1 100%;
         }
         .aside{
             background-color:beige; 
+            flex: 1 1 auto;
         }
             .publicidad{
                 background-color: chartreuse;
             }
     .footer{
         background-color: black;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
     }
         .pie{
             background-color: darkgoldenrod;
+            width: 400px;
         }
 

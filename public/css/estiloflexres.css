@@ -80,3 +80,42 @@
             width: 300px;
         }
 
+@media screen and (max-width:800px){
+/* Cuando se llegue a 800 px queremos que el Aside se 
+coloque abajo*/
+    .section{
+     flex-direction: column;
+    }
+/* Cuando se llegue a 800 px queremos que los items del Menú 
+se desplacen hacia abajo */
+    .menu{
+ /* Cuando aplica,pos flex-direction: column; se produce error visual
+ corregimos con height:auto; */       
+        flex-direction: column;
+        height:auto;
+    }
+
+
+    .aside{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and (max-width:600px){
+        .articulos{
+            flex-direction: column;
+        }
+}   
+
+
+@media screen and (max-width:400px){
+    .aside{
+        display: flex;
+        flex-direction: column;
+       
+    }
+}  

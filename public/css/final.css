@@ -1,0 +1,173 @@
+*{
+    margin:10px;
+    padding : 10px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .header{
+        background:url(../images/Jaguar.jpg);
+        background-position: center;
+        background-attachment:fixed;
+        background-size: cover;
+
+
+
+        display: flex;
+        flex-flow: column nowrap;
+
+    }
+        .menu{
+            background-color:rgba(0,0,0,.5); 
+            display: flex; 
+            flex-flow: row nowrap;
+            height: 50px;
+            align-items: center;
+        }
+            .logo{
+               
+                flex: 1 1 auto;
+               
+            
+           
+            }
+            .logo a{
+                    color:white; 
+                    font-size: 30px;
+                }
+
+            .logo  a:hover{
+                    color:darkgoldenrod;
+                 
+                }
+
+
+            .nav{
+               
+                flex: 5 1 auto;
+            
+            }
+
+            .nav a{
+               
+                color:white; 
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: 0 10 px;
+                letter-spacing: 2px;
+            
+            }
+
+            .nav a:hover{
+                color:darkgoldenrod;
+               
+             
+            }
+            .social{ 
+                flex: 1 1 auto;        
+            }
+
+            .social a{
+                color:white; 
+                font-size: 11px;          
+            }
+
+            .social a:hover{
+                color:darkgoldenrod;
+               
+             
+            }
+        .texto-principal{
+          
+        }
+            h1{
+          
+                font-size: 21px;
+            }
+
+    .section{
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+
+    }
+
+        .articulos{
+            background-color:#f7f7f7;
+            display: flex;
+            flex: 2 1 auto;
+            flex-flow: row wrap;
+        }
+            article{
+              
+                flex: 1 1 40%;
+            }
+            article img{
+                width: 100%;
+            }
+            .navegacion{
+                 background-color: deeppink;
+                 flex: 1 1 100%;
+        }
+        .aside{
+            background-color:beige; 
+            flex: 1 1 auto;
+        }
+            .publicidad{
+                background-color: chartreuse;
+            }
+    .footer{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+    }
+        .pie{
+            background-color: darkgoldenrod;
+            width: 300px;
+        }
+
+@media screen and (max-width:800px){
+/* Cuando se llegue a 800 px queremos que el Aside se 
+coloque abajo*/
+    .section{
+     flex-direction: column;
+    }
+/* Cuando se llegue a 800 px queremos que los items del Menú 
+se desplacen hacia abajo */
+    .menu{
+ /* Cuando aplica,pos flex-direction: column; se produce error visual
+ corregimos con height:auto; */       
+        flex-direction: column;
+        height:auto;
+    }
+
+
+    .aside{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and (max-width:600px){
+        .articulos{
+            flex-direction: column;
+        }
+}   
+
+
+@media screen and (max-width:400px){
+    .aside{
+        display: flex;
+        flex-direction: column;
+       
+    }
+}  
